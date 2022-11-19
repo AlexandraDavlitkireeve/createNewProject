@@ -80,6 +80,16 @@
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [
 					{
@@ -96,7 +106,8 @@
 					},
 					{
 						"key": "authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJvY3RvcGVyZiIsImlkIjoiRVFfVmJJQUJXSnRTWG91Tmx3MEMiLCJleHAiOjE2Njg2NDM4ODgsImlhdCI6MTY2ODU1NzQ4OCwiaGFzaCI6IjE5YTZkNzQ5NmIyOTMyN2ZkY2IxNzg5NTZhNGZmNmQ1In0.5Iws3YMNLnwB76ZwX8PXm5X7Trmh4JXqpX8ckVb1vmU"
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJvY3RvcGVyZiIsImlkIjoiRVFfVmJJQUJXSnRTWG91Tmx3MEMiLCJleHAiOjE2Njg2NDM4ODgsImlhdCI6MTY2ODU1NzQ4OCwiaGFzaCI6IjE5YTZkNzQ5NmIyOTMyN2ZkY2IxNzg5NTZhNGZmNmQ1In0.5Iws3YMNLnwB76ZwX8PXm5X7Trmh4JXqpX8ckVb1vmU",
+						"disabled": true
 					},
 					{
 						"key": "content-type",
@@ -560,7 +571,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"created\": 1667959104835,\r\n    \"description\": \"Save a lot of money account\",\r\n    \"id\": \"{{projectID}}\",\r\n    \"lastModified\": 1668558527150,\r\n    \"name\": \"Savings Accounts\",\r\n    \"tags\": [],\r\n    \"type\": \"DESIGN\",\r\n    \"userId\": \"{{userID}}\",\r\n    \"workspaceId\": \"{{workspaceID}}\"\r\n}"
+					"raw": "{\r\n    \"created\": 1667959104835,\r\n    \"description\": \"Save a lot of money account\",\r\n    \"id\": \"{{projectID}}\",\r\n    \"lastModified\": 1668558527150,\r\n    \"name\": \"My Savings Accounts\",\r\n    \"tags\": [],\r\n    \"type\": \"DESIGN\",\r\n    \"userId\": \"{{userID}}\",\r\n    \"workspaceId\": \"{{workspaceID}}\"\r\n}"
 				},
 				"url": {
 					"raw": "https://api.octoperf.com/design/projects/{{projectID}}",
